@@ -1,0 +1,242 @@
+/* Buttons */
+.button{
+   padding:10px;
+   border-radius: 5px;
+   -webkit-transition: background-color 0.3s ease 0s;
+   -moz-transition: background-color 0.3s ease 0s;
+   -o-transition: background-color 0.3s ease 0s;
+   transition: background-color 0.3s ease 0s;
+   background-color: $grey;
+   &:hover {
+      background: $gold;
+      color:inherit;
+   }
+}
+
+
+/*----- Tabs -----*/
+.tabs {
+   position: relative;
+   .tab-links {
+      margin-bottom: 60px;
+      li {
+         padding-right: 15px;
+         display: inline;
+         &:last-child {
+         padding-right: 0px;
+         }
+      }
+   }
+
+   a {
+      color: inherit;
+   }
+   li.active {
+      .button {
+         background-color: $gold;
+         cursor: default;
+      }
+   }
+}
+
+/*----- Content of Tabs -----*/
+ .tab-content {
+    position: relative;
+ }
+
+.tab {
+   display:none;
+}
+
+.tab.active {
+   display:block;
+}
+
+
+
+
+hr.light {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 2px solid $grey;
+   margin: 1em 0;
+   padding: 0;
+}
+
+
+
+
+
+/* Forms */
+label {
+   color: darken($grey, 30%);
+   display: block;
+   font-family: 'FuturaLT-Bold', arial, sans-serif;
+   font-style: normal;
+   text-transform: uppercase;
+   font-size: 0.7em;
+   letter-spacing: 2px;
+   margin-bottom:5px;
+}
+
+input {
+   width:100%;
+   margin-bottom:20px;
+   background: #FFF;
+   padding: 13px;
+   font-size: 1em;
+   font-family: 'FuturaLT-Bold', arial, sans-serif;
+   border: 0px solid;
+   outline-style: none;
+}
+
+/* Lists */
+ul{
+   margin:0px;
+   padding:0px;
+   list-style-type: none;
+}
+
+.inline li {
+   display: inline;
+   padding:0px;
+}
+
+
+/* Links */
+a {
+   color: $white;
+   text-decoration: none;
+   -webkit-transition: color 0.15s ease-in-out;
+   -moz-transition: color 0.15s ease-in-out;
+   -ms-transition: color 0.15s ease-in-out;
+   -o-transition: color 0.15s ease-in-out;
+   transition: color 0.15s ease-in-out;
+   &:hover{
+      color: $gold;
+   }
+}
+
+a.link-blue {
+   color: $blue;
+   text-decoration: none;
+   -webkit-transition: color 0.15s ease-in-out;
+   -moz-transition: color 0.15s ease-in-out;
+   -ms-transition: color 0.15s ease-in-out;
+   -o-transition: color 0.15s ease-in-out;
+   transition: color 0.15s ease-in-out;
+   &:hover{
+      color: darken($blue, 20%);
+   }
+}
+
+a.footer {
+   color: darken($darkgrey, 15%);
+   text-decoration: none;
+   -webkit-transition: color 0.15s ease-in-out;
+   -moz-transition: color 0.15s ease-in-out;
+   -ms-transition: color 0.15s ease-in-out;
+   -o-transition: color 0.15s ease-in-out;
+   transition: color 0.15s ease-in-out;
+   &:hover{
+      color: $gold;
+   }
+}
+
+/*Buttons */
+button {
+   font-family: 'FuturaLT-Bold', arial, sans-serif;
+   letter-spacing: 2px;
+   width:100%;
+   padding:20px;
+   color: $grey;
+   background-color: $black;
+   border: 1px solid $black;
+   -webkit-transition: all 0.15s ease-in-out;
+   -moz-transition: all 0.15s ease-in-out;
+   -ms-transition: all 0.15s ease-in-out;
+   -o-transition: all 0.15s ease-in-out;
+   transition: all 0.15s ease-in-out;
+   @media (min-width: $width-small) {
+      width: 50%;
+   }
+   &:hover{
+      color: $black;
+      background-color: $grey;
+      border: 1px solid $black;
+   }
+}
+
+// Display
+.inline {
+   display: inline;
+}
+
+.block {
+   display: block;
+}
+
+// Text Align
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+
+// Margin
+.margin-top-none {
+   margin-top: 0px;
+}
+
+.margin-top-small {
+   margin-top: 5px;
+}
+
+.margin-top-medium {
+   margin-top: 10px;
+}
+
+.margin-top-large {
+   margin-top: 20px;
+}
+
+.margin-top-xl {
+   margin-top: 30px;
+}
+
+.margin-top-xxl {
+   margin-top: 60px;
+}
+
+
+.margin-bottom-none {
+   margin-bottom: 0px;
+}
+
+.margin-bottom-small {
+   margin-bottom: 5px;
+}
+
+.margin-bottom-medium {
+   margin-bottom: 10px;
+}
+
+.margin-bottom-large {
+   margin-bottom: 20px;
+}
+
+.margin-bottom-xl {
+   margin-bottom: 30px;
+}
+
+.margin-bottom-xxl {
+   margin-bottom: 60px;
+}

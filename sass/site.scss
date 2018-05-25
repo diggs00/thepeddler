@@ -1,0 +1,343 @@
+html, body {
+   height: 100%;
+   position:relative;
+   z-index:0;
+   font-family: $Body;
+}
+
+header {
+   &.home{
+      background: url(../img/home_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+// background-attachment: fixed;
+      background-size: cover;
+      height: 100%;
+      position: relative;
+   }
+   &.locations{
+      background: url(../img/locations_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+/*       background-attachment: fixed; */
+      background-size: cover;
+      height: 20%;
+      position: relative;
+      h1 {
+         color: $white;
+         margin:0px;
+      }
+   }
+   &.rides{
+      background: url(../img/rides_splash.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+/*       background-attachment: fixed; */
+      background-size: cover;
+      height: 20%;
+      position: relative;
+      h1 {
+         color: $white;
+         margin:0px;
+      }
+   }
+
+}
+
+.table {
+   display: table;
+   width: 100%;
+   height: 100%;
+/*    border: 1px dotted blue; */
+}
+.table-cell {
+/*    border: 1px dotted gray; */
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+.logo-main {
+   width: 80%;
+   height: 80%;
+   display: inline-block;
+   vertical-align: top; /* Removes the extra white space below the baseline */
+   @media (min-width: $width-medium) {
+      width: 70%;
+      height: 70%;
+   }
+}
+
+
+.main-content {
+   z-index: 1;
+   position: relative;
+}
+
+p.subhead {
+   font-family: $Tagline;
+   font-style: italic;
+   color: darken($grey, 20%);
+   font-size: 24px;
+   letter-spacing: 1px;
+   width:200px;
+   border-bottom: 2px solid $grey;
+   margin: 0px auto;
+   line-height: 45px;
+   &.white {
+      color: $white;
+   }
+}
+
+
+section {
+   z-index: 1;
+   position: relative;
+   padding: 150px 0px;
+   text-align: center;
+   background: $white;
+   p.body-text {
+      color: darken($grey, 30%);
+      letter-spacing: 1px;
+   }
+   h1.heading {
+      line-height: 1em;
+   }
+   &.operation-band {
+      background-color: $gold;
+      background: url(../img/band-texture.jpg);
+      background-position: center center;
+      padding: 10px 0px;
+      h2 {
+         font-size: 18px;
+         color: darken($grey, 100%);
+         line-height: 1em;
+         margin-bottom: 0px;
+      }
+   }
+}
+
+
+section.photo {
+   background-color: $black;
+   padding: 0px 0px;
+   text-align: center;
+   z-index: 1;
+   position: relative;
+   overflow: hidden;
+}
+
+.brand-info {
+   margin-top: 30px;
+   ul.inline li {
+      font-size: 20px;
+      padding-right: 20px;
+      &:last-child {
+      padding-right: 0px;
+      }
+   }
+}
+
+
+
+
+/*--------------------- FOOTER ---------------------  */
+
+
+footer {
+   width: 100%;
+   background-color: $black;
+   z-index: -2;
+   position: relative;
+   display: block;
+   padding: 80px 0px 15px 0px;
+   color: darken($darkgrey, 15%);
+   .footer-image {
+      @media (min-width: $width-small) {
+         background: $black url(../img/footer_image.gif) right 0px no-repeat;
+         left:30%;
+         position:fixed;
+         width:610px;
+         height: 385px;
+         z-index:-1;
+         left:19%;
+         bottom:0;
+      }
+      @media (min-width: $width-medium) {
+         left:41%;
+      }
+      @media (min-width: $width-large) {
+         left:50%;
+      }
+   }
+   h3 {
+      margin-bottom:20px;
+   }
+   .address1 {
+      float:left;
+      margin-bottom: 30px;
+      @media (min-width: 600px) {
+         margin-right:40px;
+      }
+   }
+   .address2 {
+      float:left;
+   }
+   .location {
+      margin-bottom:15px;
+      p {
+         font-family: $Body-Bold-italic;
+         width:275px;
+         border-top: 1px solid darken($darkgrey, 15%);
+         border-bottom: 1px solid darken($darkgrey, 15%);
+         padding: 5px 0px;
+         margin: 0px;
+         letter-spacing: 2px;
+         font-size: 18px;
+      }
+   }
+   li {
+      font-family: $Body;
+      font-size: 16px;
+      padding-bottom: 3px;
+      a.phone {
+         line-height:2em;
+         margin-top: 20px;
+         color: darken($darkgrey, 15%);
+         font-family: $Body-Bold;
+         padding-top:10px;
+         font-size:20px;
+         &:hover{
+            color: $gold;
+         }
+      }
+   }
+   .contact-social {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      @media (min-width: 645px) {
+         margin-top: 20px;
+      }
+      li {
+         font-size:40px;
+         padding-right: 15px;
+      }
+   }
+}
+
+
+/* --------------------- LOCATION ---------------------  */
+
+section.location {
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.location-info {
+   p {
+      font-family: $Body-Bold-italic;
+      padding: 0px;
+      margin: 0px 0px 0px 0px;
+      letter-spacing: 2px;
+      font-size: 18px;
+   }
+   li {
+      font-family: $Body;
+      font-size: 16px;
+      padding-bottom: 3px;
+   }
+   .inline li {
+      display: block;
+      @media (min-width: $width-small) {
+         display: inline;
+         padding-right: 10px;
+         &:last-child {
+            padding-right: 0px;
+         }
+      }
+   }
+   a {
+      color: $blue;
+      font-size: 20px;
+      text-decoration: none;
+      -webkit-transition: color 0.15s ease-in-out;
+      -moz-transition: color 0.15s ease-in-out;
+      -ms-transition: color 0.15s ease-in-out;
+      -o-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      &:hover{
+         color: darken($blue, 20%);
+      }
+   }
+   img {
+      width: 60%;
+   	height: 60%;
+      margin-bottom: 20px;
+      @media (min-width: $width-small) {
+         width: 25%;
+      	height: 25%;
+         margin: 0px 0px 10px 0px;
+      }
+      &.clip-circle {
+         -webkit-clip-path: circle(50% at 50% 50%);
+         clip-path: circle(50% at 50% 50%);
+      }
+   }
+}
+
+
+
+/* --------------------- RIDE ---------------------  */
+
+section.ride {
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.ride-info {
+   text-align: initial;
+   .ride {
+      margin-bottom: 120px;
+   }
+   p {
+      font-family: $Body-Bold-italic;
+      padding: 0px;
+      margin: 0px 0px 0px 0px;
+      letter-spacing: 2px;
+      font-size: 18px;
+   }
+   ul {
+      margin-left: 70px;
+   }
+   li {
+      font-family: $Body;
+      font-size: 16px;
+      padding-bottom: 3px;
+   }
+   a {
+      color: $blue;
+      font-size: 20px;
+      text-decoration: none;
+      -webkit-transition: color 0.15s ease-in-out;
+      -moz-transition: color 0.15s ease-in-out;
+      -ms-transition: color 0.15s ease-in-out;
+      -o-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      &:hover{
+         color: darken($blue, 20%);
+      }
+   }
+   .circle {
+      float:left;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      border-radius: 50%;
+      background-color: $grey;
+      border: 3px solid $darkgrey;
+      padding: 11px 0 0 0;
+      text-align: center;
+      h6 {
+         letter-spacing: 0px;
+      }
+   }
+}

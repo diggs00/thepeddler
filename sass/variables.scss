@@ -1,0 +1,24 @@
+/* Media Queries */
+$width-small: 768px; /* Tablet */
+$width-medium: 992px; /* Laptop */
+$width-large: 1200px; /* Desktop */
+
+
+/* Colors */
+$blue:  #0193D7;
+$black: #0e0e0e;
+$black-transparent: rgba(0,0,0,0.9);
+$grey:  #eeeeee;
+$darkgrey:  #6e6e6e;
+$white: #ffffff;
+$gold: #DCCC96;
+
+
+/* Fonts */
+$Heading:   'proxima_nova_rgbold', Arial, sans-serif;
+$Heading-regular: 'proxima_nova_rregular', Arial, sans-serif;
+$Tagline:  'SentinelBookItalic', serif;
+$Tagline-bold-italic:  'Sentinel-SemiboldItalic', serif;
+$Body:  'SentinelBook', serif;
+$Body-Bold:  'SentinelMedium', serif;
+$Body-Bold-italic:  'SentinelMediumItalic', serif;

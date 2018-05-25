@@ -1,0 +1,225 @@
+body {
+   color: darken($grey, 50%);
+   font-size:18px;
+   @media (min-width: $width-small) {
+      font-size:20px;
+   }
+   @media (min-width: $width-medium) {
+      font-size:22px;
+   }
+
+}
+
+/* Fonts */
+@font-face {
+   font-family: 'FuturaLT-Bold';
+   src: url('../fonts/FuturaLT-Bold.eot');
+   src: url('../fonts/FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaLT-Bold.woff') format('woff'),
+        url('../fonts/FuturaLT-Bold.ttf')  format('truetype'),
+        url('../fonts/FuturaLT-Bold.svg#FuturaLT-Bold') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+@font-face {
+   font-family: 'Sentinel-SemiboldItalic';
+   src: url('../fonts/Sentinel-SemiboldItaliceot');
+   src: url('../fonts/Sentinel-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sentinel-SemiboldItalic.woff') format('woff'),
+        url('../fonts/Sentinel-SemiboldItalic.ttf')  format('truetype'),
+        url('../fonts/Sentinel-SemiboldItalicsvg#FuturaLT-Bold') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SentinelBook';
+   src: url('../fonts/SentinelBook.eot');
+   src: url('../fonts/SentinelBook.eot') format('embedded-opentype'),
+        url('../fonts/SentinelBook.woff2') format('woff2'),
+        url('../fonts/SentinelBook.woff') format('woff'),
+        url('../fonts/SentinelBook.ttf') format('truetype'),
+        url('../fonts/SentinelBook.svg#SentinelBook') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'SentinelBookItalic';
+   src: url('../fonts/SentinelBookItalic.eot');
+   src: url('../fonts/SentinelBookItalic.eot') format('embedded-opentype'),
+        url('../fonts/SentinelBookItalic.woff2') format('woff2'),
+        url('../fonts/SentinelBookItalic.woff') format('woff'),
+        url('../fonts/SentinelBookItalic.ttf') format('truetype'),
+        url('../fonts/SentinelBookItalic.svg#SentinelBookItalic') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'SentinelMedium';
+    src: url('../fonts/SentinelMedium.eot');
+    src: url('../fonts/SentinelMedium.eot') format('embedded-opentype'),
+         url('../fonts/SentinelMedium.woff2') format('woff2'),
+         url('../fonts/SentinelMedium.woff') format('woff'),
+         url('../fonts/SentinelMedium.ttf') format('truetype'),
+         url('../fonts/SentinelMedium.svg#SentinelMedium') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'SentinelMediumItalic';
+    src: url('../fonts/SentinelMediumItalic.eot');
+    src: url('../fonts/SentinelMediumItalic.eot') format('embedded-opentype'),
+         url('../fonts/SentinelMediumItalic.woff2') format('woff2'),
+         url('../fonts/SentinelMediumItalic.woff') format('woff'),
+         url('../fonts/SentinelMediumItalic.ttf') format('truetype'),
+         url('../fonts/SentinelMediumItalic.svg#SentinelMediumItalic') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/ProximaNova-Bold-webfont.eot');
+    src: url('../fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rregular';
+    src: url('../ProximaNova-Regular-webfont.eot');
+    src: url('../ProximaNova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../ProximaNova-Regular-webfont.woff2') format('woff2'),
+         url('../ProximaNova-Regular-webfont.woff') format('woff'),
+         url('../ProximaNova-Regular-webfont.ttf') format('truetype'),
+         url('../ProximaNova-Regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+p {
+   line-height: 1.7em;
+   @media (min-width: $width-small) {
+      line-height: 1.7em;
+   }
+}
+
+small {
+   font-size: 12px;
+   &.copywright {
+      color: darken($grey, 30%);
+   }
+}
+
+h1,h2 {
+   font-family: $Heading;
+}
+
+h1 {
+   margin-top: 10px;
+   font-size: 40px;
+   letter-spacing: 5px;
+   @media (min-width: $width-medium) {
+      font-size: 52px;
+   }
+}
+
+h2 {
+   letter-spacing: 2px;
+   margin:0px;
+   small {
+      font-size: 13px;
+      margin-bottom: 0px;
+   }
+}
+
+h3 {
+   font-size: 25px;
+   font-family: $Heading;
+   letter-spacing: 2px;
+   margin:0px;
+}
+
+
+h4 {
+   font-size: 20px;
+   font-family: $Heading;
+   letter-spacing: 2px;
+   margin:0px;
+}
+
+h5 {
+   font-size: 18px;
+   font-family: $Heading;
+   letter-spacing: 0px;
+   margin:0px;
+}
+
+h6 {
+   font-size: 16px;
+   font-family: $Heading;
+   letter-spacing: 0px;
+   margin:0px;
+}
+
+
+
+
+
+
+/* Icons */
+@font-face {
+  font-family: 'icon';
+  src:url('../fonts/icon.eot?xqu2oy');
+  src:url('../fonts/icon.eot?xqu2oy#iefix') format('embedded-opentype'),
+    url('../fonts/icon.ttf?xqu2oy') format('truetype'),
+    url('../fonts/icon.woff?xqu2oy') format('woff'),
+    url('../fonts/icon.svg?xqu2oy#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon_"], [class*=" icon_"] {
+  font-family: 'icon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon_email:before {
+  content: "\e900";
+}
+.icon_facebook:before {
+  content: "\e901";
+}
+.icon_instagram:before {
+  content: "\e902";
+}
+.icon_twitter:before {
+  content: "\e903";
+}
+
